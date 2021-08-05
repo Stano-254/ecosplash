@@ -86,8 +86,8 @@ else:
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'blog',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'USER': 'project_admin',
+        'PASSWORD': 'Darker5440',
         'HOST': 'localhost',
         'PORT': '',
     }
