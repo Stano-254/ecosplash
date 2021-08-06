@@ -6,5 +6,5 @@ urlpatterns = [
 	# The home page
 	# owner page
 	# view dashboard
-	path('/', views.index, name='index'),
+	path('', views.index, name='index'),
 ]
