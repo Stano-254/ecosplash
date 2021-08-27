@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+# blog
+# profile
+# gallery & portfolio
+# pages .. about ..portfolio ..contacts ..
+
+class profile(models.Model):
+	id= models.BigAutoField(primary_key=True)

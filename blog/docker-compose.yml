@@ -1,0 +1,20 @@
+version: "3.9"
+   
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=blog
+      - POSTGRES_USER=project_admin
+      - POSTGRES_PASSWORD=Darker5440
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8002
+    volumes:
+      - .:/code
+    ports:
+      - "8002:8002"
+    depends_on:
+      - db
